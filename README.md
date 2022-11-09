@@ -81,7 +81,13 @@ Ahora si obtenemos un primer resúmen del dataset
 
 Evaluamos la cantidad de datos efectivos que teníamos en cada columna
 
-# Poner foto
+![03Completitud](https://user-images.githubusercontent.com/104787036/200887381-089b861d-52c8-4700-9dba-31955a43ee9a.JPG)
+Podemos ver que tenemos muchas columnas completas y que tenemos muchos datos faltantes de time que los rellenaremos en el futuro con 00:00 para poder utilizar esa información
+
+Evaluamos la distribución de esos faltantes en el dataset
+![04Completitud](https://user-images.githubusercontent.com/104787036/200887786-db93d0b4-45db-4aac-a592-9e411f045ea3.JPG)
+
+Podemos ver que en la fila más vacía sólo tenemos 5 datos mientras que en la más completa tenemos todos
 
 ##### ***2.2 Exploración inicial de fecha***
 
