@@ -82,26 +82,31 @@ Ahora si obtenemos un primer resúmen del dataset
 Evaluamos la cantidad de datos efectivos que teníamos en cada columna
 
 ![03Completitud](https://user-images.githubusercontent.com/104787036/200887381-089b861d-52c8-4700-9dba-31955a43ee9a.JPG)
+
 Podemos ver que tenemos muchas columnas completas y que tenemos muchos datos faltantes de time que los rellenaremos en el futuro con 00:00 para poder utilizar esa información
 
 Evaluamos la distribución de esos faltantes en el dataset
+
 ![04Completitud](https://user-images.githubusercontent.com/104787036/200887786-db93d0b4-45db-4aac-a592-9e411f045ea3.JPG)
 
 Podemos ver que en la fila más vacía sólo tenemos 5 datos mientras que en la más completa tenemos todos
 
 ##### ***2.2 Exploración inicial de fecha***
 Empezamos transformando la columna de fecha, para esto se usa la libreria datetime obteniendo la siguiente distribución de casos en los años
+
 ![05Accidentesporaño](https://user-images.githubusercontent.com/104787036/200888941-fbaf4714-1741-481e-a8ab-3e7979f1c6b8.JPG)
 
 Vemos que las columnas date y time no tienen un correcto formato, por lo que nos impide utilizarlas, es por esto que hemos unificado las columnas en una sola que posea el formato de mes,día,año hora,minutos:'%B %d %Y %H:%M'
 Hubo un inconveniente con uno de los horarios en que quedaba:october 04 1992 1:75, siendo 75 un número inválido de minutos por lo que se sustituyó por 'october 04 1992 00:00'
 Finalmente se obtuvo el rango de fechas contemplado que es de  1908-09-17 17:18:00 a 2021-07-06 15:00:00
 Quedando:
+
 ![06Accidentes por mes y dia](https://user-images.githubusercontent.com/104787036/200891338-d31073a0-c96c-45da-bcca-53337d025b6c.JPG)
 
 ##### ***2.3 Exploración inicial de location***
 
  A través de la columna location y la librería de Nominatim pudimos obtener las coordenas de 2910 puntos de los accidentes siendo una muestra reperesentariva ya que el total es de 5008 valores. Quedando distribuidos en el espacio de la siguiente manera:
+ 
 ![07Localizacion](https://user-images.githubusercontent.com/104787036/200891822-4c21118f-65b8-4797-8620-6e6e7fc31404.JPG)
 
 ##### ***2.4 Exploración inicial de operator***
@@ -109,17 +114,24 @@ Quedando:
  Para las mismas luego de algunas transformaciones se obtuvo un ranking de los operadores con mayor cantidad de accidentes desde 17/09/1908 a 06/07/2021, obteniendo:
 
 ![08Operador01](https://user-images.githubusercontent.com/104787036/200892305-ec8a4410-1616-4e88-976d-4afe4a3e1358.JPG)
+
  Luego se obtuvieron los resultados según la suma de fatalidades totales por operador
+ 
 ![09Operador02](https://user-images.githubusercontent.com/104787036/200892587-2bcf4dfd-ee86-454d-9438-1e2b9f99dd3c.JPG)
+
  Finalmente se obtuvo la cantidad de fatalidades por cantidad de veces que el operador había tenido un accidente. Quedando el ranking de la siguiente manera:
+ 
 ![10Operador03](https://user-images.githubusercontent.com/104787036/200892864-4e064c17-c4eb-466c-bd43-8ae3c56ed6a3.JPG)
 
     Finalmente analizamos en qué casos los operadores son militares y en cúales miliraes, evaluemos la proporcion en el total y durante el transcurso del tiempo
+    
 ![11Operador04](https://user-images.githubusercontent.com/104787036/200893208-9f6fc39e-a703-4b99-8322-6eafd074ffb3.JPG)
 
 ##### ***2.4 Exploración inicial de 'total_aboard','passengers_aboard','crew_Aboard','total_fatalities','passengers_fatalities','crew_Fatalities','ground'***
 Estas columnas fueron pasadas a formato int por tratarse de personas y se obtuvieron sus valores característicos quedando:
-# poner foto
+
+![12Numericcolumns](https://user-images.githubusercontent.com/104787036/200893732-04926929-4352-4139-b1c1-16d113702a16.JPG)
+
 #### ***2.5 Exploración inicial de summary***
 
 Luego de normalizar esta columna, sacarle las stopword y algunas palabras que no eran relevantes como :['city','de','los','crashed','crew','plane','aircraft']
