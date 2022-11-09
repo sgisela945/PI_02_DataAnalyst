@@ -1,5 +1,5 @@
 # PI_02_DataAnalyst
-
+![avión-1140x600](https://user-images.githubusercontent.com/104787036/200881547-2af86e70-7acc-4600-8a44-825e01248a57.jpg)
 ##  **Contexto**
 La **Organización de Aviación Civil Internacional (OACI)**, organismo de la Organización de las Naciones Unidas, quiere investigar en profundidad los accidentes producidos desde inicios del siglo XX. Para ello, les solicita la elaboración de un informe y un dashboard interactivo que recopile tal información. 
 
