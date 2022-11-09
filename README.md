@@ -90,6 +90,7 @@ Evaluamos la distribución de esos faltantes en el dataset
 Podemos ver que en la fila más vacía sólo tenemos 5 datos mientras que en la más completa tenemos todos
 
 ##### ***2.2 Exploración inicial de fecha***
+Empezamos transformando la columna de fecha, para esto se usa la libreria datetime obteniendo la siguiente distribución de casos en un año![05Accidentesporaño](https://user-images.githubusercontent.com/104787036/200888941-fbaf4714-1741-481e-a8ab-3e7979f1c6b8.JPG)
 
 Vemos que las columnas date y time no tienen un correcto formato, por lo que nos impide utilizarlas, es por esto que hemos unificado las columnas en una sola que posea el formato de mes,día,año hora,minutos:'%B %d %Y %H:%M'
 Hubo un inconveniente con uno de los horarios en que quedaba:october 04 1992 1:75, siendo 75 un número inválido de minutos por lo que se sustituyó por 'october 04 1992 00:00'
