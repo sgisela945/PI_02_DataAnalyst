@@ -18,7 +18,7 @@ A raíz de esta solicitud, nuestro Project Manager nos encarga una serie de tare
 
 + `Python`: EDA + transformaciones 
 + `SQL`: base de datos
-+ `Power BI` -preferentemente- o `Streamlit`: dashboard
++ `Power BI` `: dashboard
 + `GitHub`: con un README.md donde se elabore el informe
 
 A modo de resumen, se realiza un primer acercamiento al dataset con Python. Allí, crearán un notebook que contendrá un análisis exploratorio y realizarán las transformaciones y el preprocesamiento que consideren pertinentes.
@@ -43,7 +43,7 @@ Podemos empezar diciendo que:
 *  Hay que pasar a número (str/float): cn_ln,	all_aboard,	PASAJEROS A BORDO,	crew_aboard	cantidad de fallecidos,	passenger_fatalities,	crew_fatalities	ground,
 *  Que existen muchos datos null que estan completos con '?'
 
-Significado de las columnas
+Significado de las columnas - Diccionario:
 
 * Date - Date of accident- Fecha del accidente
 * Time - Local time, in 24 hr. in the format hh:mm - Hora local, en 24 hr. en el formato hh:mm
@@ -115,7 +115,7 @@ Quedando:
 
 ![08Operador01](https://user-images.githubusercontent.com/104787036/200892305-ec8a4410-1616-4e88-976d-4afe4a3e1358.JPG)
 
- Luego se obtuvieron los resultados según la suma de fatalidades totales por operador
+ Luego se obtuvieron los resultados según la suma de fatalidades totales por operador:
  
 ![09Operador02](https://user-images.githubusercontent.com/104787036/200892587-2bcf4dfd-ee86-454d-9438-1e2b9f99dd3c.JPG)
 
@@ -123,7 +123,7 @@ Quedando:
  
 ![10Operador03](https://user-images.githubusercontent.com/104787036/200892864-4e064c17-c4eb-466c-bd43-8ae3c56ed6a3.JPG)
 
-    Finalmente analizamos en qué casos los operadores son militares y en cúales miliraes, evaluemos la proporcion en el total y durante el transcurso del tiempo
+Finalmente analizamos en qué casos los operadores son militares y en cúales miliraes, evaluemos la proporcion en el total y durante el transcurso del tiempo
     
 ![11Operador04](https://user-images.githubusercontent.com/104787036/200893208-9f6fc39e-a703-4b99-8322-6eafd074ffb3.JPG)
 
