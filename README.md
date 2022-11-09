@@ -77,7 +77,7 @@ Comenzamos cambiando el nombre de las columnas por otros más adecuados:
 Cambiamos todos los textos a minúsculas y sacamos carácteres especiales 
 Ahora si obtenemos un primer resúmen del dataset
 
-# PONER FOTO
+![02Tablaresumen](https://user-images.githubusercontent.com/104787036/200884775-33a83bfe-0450-4e33-a9cb-3b639b0eed72.JPG)
 
 Evaluamos la cantidad de datos efectivos que teníamos en cada columna
 
