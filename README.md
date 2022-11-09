@@ -128,9 +128,11 @@ Finalmente analizamos en qué casos los operadores son militares y en cúales mi
 ![11Operador04](https://user-images.githubusercontent.com/104787036/200893208-9f6fc39e-a703-4b99-8322-6eafd074ffb3.JPG)
 
 ##### ***2.4 Exploración inicial de 'total_aboard','passengers_aboard','crew_Aboard','total_fatalities','passengers_fatalities','crew_Fatalities','ground'***
-Estas columnas fueron pasadas a formato int por tratarse de personas y se obtuvieron sus valores característicos quedando:
+Estas columnas fueron rellenados sus valores null y pasadas a formato int por tratarse de personas. Finalmente se obtuvieron sus valores característicos quedando:
 
 ![12Numericcolumns](https://user-images.githubusercontent.com/104787036/200893732-04926929-4352-4139-b1c1-16d113702a16.JPG)
+
+En los que podemos ver sus valores máximos y mínimos, su promedio, la media y los cuartiles los cuáles podrían ser utilizados para eliminar outliers.
 
 #### ***2.5 Exploración inicial de summary***
 
