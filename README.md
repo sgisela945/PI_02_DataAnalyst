@@ -135,17 +135,29 @@ Estas columnas fueron pasadas a formato int por tratarse de personas y se obtuvi
 #### ***2.5 Exploración inicial de summary***
 
 Luego de normalizar esta columna, sacarle las stopword y algunas palabras que no eran relevantes como :['city','de','los','crashed','crew','plane','aircraft']
-# poner foto
+
+![13Summary](https://user-images.githubusercontent.com/104787036/200894700-3f60086b-eda9-4d30-b5f2-720c1ed7bbde.JPG)
 
 Se obtuvo la frecuencia de repetición de las palabras, entre las que se encuentran mencionadas condiciones del piloto en más de 1100 casos, el motor en más de 1000 veces que representa un 20% y la más importante el clima en más de 620 veces que es un 13% aproximadamente de las veces y se reportaron situaciones de fuego 500 veces que representan un 10% aproximadamente
 
 #### ***2.6 Exploración inicial de route***
 Se repitió el proceso realizado en summary y se obtuvo la siguiente información
-# Poner foto
 
-Se puede observar que si bien se encuentra separada la palabra new york se encuentra en la ruta con mayor cantidad de accidentes, luego le sigue paris, luego londres, luego moscow, chicago, roma, los ángeles, miami, bogota, Sao Paulo , Cairo, méxico
+![14Route](https://user-images.githubusercontent.com/104787036/200894948-023d5387-793e-424b-86c4-8bbfc89489fc.JPG)
+
+Se puede observar que si bien se encuentra separada la palabra New York se encuentra en la ruta con mayor cantidad de accidentes, luego le sigue Paris, luego Londres, luego Moscow, Chicago, Roma, Los Ángeles, Miami, Bogota, Sao Paulo , Cairo, México
 
 #### ***`3. Información extra`***
-Elegimos un dataset donde se ven la cantidad de vuelos totales según el año en el rando de 1970 a 2016
+Elegimos un dataset donde se ven la cantidad de vuelos totales según el año discretizada 266 Paises. A la misma le reemplazamos por cero sus valores nulos. Tamibien le realizamos la suma de todas sus filas y lo acotamos en el rango de años desde 1970 a 2016.
+A este dataset lo transpusimos a dilas por columnas y le agregamos las columnas del dataset que ya teníamos agrupado por año. De esta manera compatibilizamos toda la información obteniendo un nuevo dataset que será enviado a MySQL y luego a PowerBi
 
 From https://data.worldbank.org/indicator/IS.AIR.DPRT?end=2016&start=1970&view=chart
+
+Lo que pudimos obtener es una relación entre la cantidad de fallecidos y la cantidad de vuelos totales realizados en ese año la cual denominamos ratio
+
+![14Extrainfo](https://user-images.githubusercontent.com/104787036/200895885-4b679603-fc87-48e8-94d8-12138b7d8f91.JPG)
+
+
+***EXTRA***
+Se podría ampliar este trabajo realizando predicciones a futuro o realizando cluster de accidentes con características similares
+
